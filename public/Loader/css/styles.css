@@ -2,6 +2,8 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 html {
@@ -19,15 +21,22 @@ html {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: white;
+  background-color: black;
   z-index: 9999;
   display: none;
   justify-content: center;
   align-items: center;
 }
 
+.loader-logo {
+  position: inherit;
+  top: 25vh;
+  width: 200px;
+  height: 200px;
+}
 .loader {
-  position: relative;
+  position: inherit;
+  top: 45vh;
   width: 60px;
   height: 60px;
 }
@@ -54,10 +63,13 @@ html {
   top: calc(50% - 20px);
   animation: loader-2 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
 }
-
-.show_loader {
-  display: flex;
+@media (max-width: 1250px) {
+  .show_loader {
+    display: flex;
+  }
 }
+
+
 
 @keyframes loader-1 {
   0%{

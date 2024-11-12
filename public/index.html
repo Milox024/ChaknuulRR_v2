@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Loader/css/styles.css">
+    <link rel="stylesheet" href="">
     <style>
       * {
         margin: 0;
@@ -99,18 +100,20 @@
         height: 100vh;
         overflow: auto;  
         scroll-snap-type: y mandatory;  
+        overflow-x: hidden;
       }
       .snap-section {
         text-align: center;
-        padding: 200px 300px 0 300px;
+        padding: 30% 10% 10% 10%;
         scroll-snap-align: start;
         min-height: 100vh;  
+        z-index: 10;
       }
       .snap-section:nth-child(1) {
         background: url("./images/background.jpg");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover;      
       }
       .snap-section:nth-child(2) {
         background: green;
@@ -130,19 +133,23 @@
       .snap-section:nth-child(6) {
         background: red;
       }
+      .snap-section:nth-child(7) {
+        background: #4ecdc4;
+      }
 
+      #root {
+        display: none;
+      }
     </style>
     <title>Chaknúul</title>
   </head>
   <body>
-      
+
     <div id="loaderPagina" class="section_loader">
-      <div class="row">
-        <div class="col-12">
-          <img src="images/chaknuul-logo.svg" alt="" width="300">
-        </div>
+      
+      <div class="loader-logo">
+        <img src="images/chaknuul-logo.svg" alt="" width="200"/>
       </div>
-      <br/>
       <div class="loader">
         <div class="loader_1"></div>
         <div class="loader_2"></div>
@@ -157,30 +164,24 @@
       </a>
       </center>
     </header>
+    
     <div class="snap-container">
-      <div class="snap-section" id="zona1">
-        <div class="opacity"></div>
-        Chaknuul con lema, siguiente evento, mas eventos
+      <div class="snap-section">
+        <div class="row">
+          <div class="col-12">
+            <img src="images/chaknuul-logo.svg" alt="" style="width: 50%;">
+            <p class="chaknuul-main">Chaknúul</p>
+            <p class="lema-main">Donde ser tú, es más que suficiente.</p>
+          </div>
+        </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fugit numquam, pariatur odio nostrum unde recusandae expedita repudiandae nam voluptates accusamus tempora vero saepe in ut. Accusamus aut dolores cupiditate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, repellat. Ad architecto sunt consequuntur sequi in obcaecati culpa a praesentium natus nulla, veritatis cum placeat temporibus odit repellendus? Deleniti, delectus.
       </div>
-      <div class="snap-section" id="zona2">
-        EVENTOS ESPECIALES
-      </div>
-      <div class="snap-section" id="zona2">
-        Viajes
-      </div>
-      <div class="snap-section" id="zona2">
-        Proyectos
-      </div>
-      <div class="snap-section" id="zona2">
-        Comunidad y blog
-      </div>
-      <div class="snap-section" id="zona2">
-        partners
-      </div>
-      <div class="snap-section" id="zona2">
-        chaknuul shop
+      <div class="snap-section">
+        prueba
       </div>
     </div>
+    
 
 
 

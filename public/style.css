@@ -1,13 +1,11 @@
 
+  
   html {
     scroll-behavior: smooth;
   }
   body
   {
     font-family: 'Poppins', sans-serif;
-  }
-  ::-webkit-scrollbar {
-    display: none;
   }
   .c-one
   {
@@ -33,10 +31,20 @@
   {
     vertical-align: bottom;
   }
+  .chaknuul-main
+  {
+      font-family: 'Sirin Stencil', sans-serif;
+      font-size: 30px;
+      color: white;
+  }
+  .lema-main {
+    color: white;
+  }
   .chaknuul 
   {
       font-family: 'Sirin Stencil', sans-serif;
       font-size: 26px;
+      color: white;
   }
   .poppins 
   {
@@ -54,4 +62,7 @@
     height: 100vh !important;
     width: 100vw !important;
     background-image: linear-gradient(#000, rgba(255,255,255,.05), rgba(255,255,255,.1))!important;
+  }
+  #root {
+    height: 0 !important;
   }
