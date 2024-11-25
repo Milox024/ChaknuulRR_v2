@@ -1,7 +1,13 @@
 
-  
+@media (max-width: 1250px) {
   html {
     scroll-behavior: smooth;
+  }
+  .css-1p7hvmc {
+    height: 100vh;
+    width: 100vw;
+    padding: 0 !important;
+    margin: 0 !important;
   }
   body
   {
@@ -63,6 +69,156 @@
     width: 100vw !important;
     background-image: linear-gradient(#000, rgba(255,255,255,.05), rgba(255,255,255,.1))!important;
   }
-  #root {
-    height: 0 !important;
+
+  * {
+    margin: 0;
+    padding: 0;
   }
+  .chaknuul 
+  {
+      font-family: 'Sirin Stencil', sans-serif;
+      font-size: 26px;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: fix;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 9999;
+  }
+
+  header.abajo {
+    background: linear-gradient(rgb(0,0,0,0.4), rgb(0,0,0));
+    padding: 15px 20px;
+  }
+
+  header .logo {
+    position: relative;
+    color: white;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+    opacity: 0;
+    font-family: 'Sirin Stencil', sans-serif;
+    font-size: 15px;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img {
+    width: 50px;
+  }
+
+  .zona1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("./images/background.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  .zona2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("./images/background.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  header.abajo .logo,
+  header.abajo .img
+  {
+    opacity: 1;
+    color: white;
+  }
+  h6, hr {
+    color: white;
+  }
+  .snap-container {
+    height: 100vh;
+    overflow: auto;  
+    scroll-snap-type: y mandatory;  
+    overflow-x: hidden;
+  }
+  .snap-section {
+    text-align: center;
+    padding: 30% 10% 10% 10%;
+    scroll-snap-align: start;
+    min-height: 100vh;
+  }
+  .snap-section:nth-child(1) {
+    background: url("./images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .snap-section:nth-child(2) {
+    background: green;
+  }
+  .snap-section:nth-child(3) {
+    background: #556270;
+  }
+  .snap-section:nth-child(4) {
+    background: blue;
+  }
+  .snap-section:nth-child(5) {
+    background: #556270;
+  }
+  .snap-section:nth-child(6) {
+    background: #4ecdc4;
+  }
+  .snap-section:nth-child(7) {
+    background: red;
+  }
+  .snap-section:nth-child(7) {
+    background: #4ecdc4;
+  }
+  .grid-container {
+    display: grid;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* THE MAGIC GOES HERE ✨ */
+  .grid-container--fill {
+      grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+  }
+  .grid-element {
+    padding: 5px;
+    height: 15vh;
+    color: #fff;
+  }
+  .customCard {
+    height: 100%;
+    border-radius: 20px;
+  }
+  .customCard .trans {
+    height: 100%;
+    border-radius: 5px;
+    /*background-image: linear-gradient(rgba(255,255,255,0.0), rgba(0,0,0,0.3), rgba(0,0,0,1))!important;*/
+    background-image: linear-gradient(rgb(82,154,217,0.0), rgb(82,154,217,0.3), rgb(82,154,217,1));
+    color: white;
+    cursor: pointer;
+  }
+  .textoPresentacion {
+    position: relative;
+    font-size: 18px;
+    top: 75%;
+  }
+  .customCard:nth-child(1) {
+    background-size: cover;
+    background-position: center;
+  }
+}

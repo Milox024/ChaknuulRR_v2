@@ -1,6 +1,5 @@
 import Box from '@mui/material/Box';
 import Sidebar from '../Navigation/SideBar';
-import Navbar from '../Navigation/Navbar';
 import SpeedDial from '../Navigation/SpeedDial'
 
 const BaseContainer = (props) => {
