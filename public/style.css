@@ -149,55 +149,33 @@
     overflow: auto;  
     scroll-snap-type: y mandatory;  
     overflow-x: hidden;
-  }
-  .snap-section {
     text-align: center;
-    padding: 30% 10% 10% 10%;
+    padding: 10% 10% 10% 10%;
     scroll-snap-align: start;
     min-height: 100vh;
-  }
-  .snap-section:nth-child(1) {
     background: url("./images/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .snap-section:nth-child(2) {
-    background: green;
-  }
-  .snap-section:nth-child(3) {
-    background: #556270;
-  }
-  .snap-section:nth-child(4) {
-    background: blue;
-  }
-  .snap-section:nth-child(5) {
-    background: #556270;
-  }
-  .snap-section:nth-child(6) {
-    background: #4ecdc4;
-  }
-  .snap-section:nth-child(7) {
-    background: red;
-  }
-  .snap-section:nth-child(7) {
-    background: #4ecdc4;
-  }
   .grid-container {
     display: grid;
+    height: 15vh;
   }
   a {
     color: white;
     text-decoration: none;
   }
-
+  .mainEvent {
+    height: 25vh;
+  }
   /* THE MAGIC GOES HERE ✨ */
   .grid-container--fill {
       grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
   }
   .grid-element {
     padding: 5px;
-    height: 15vh;
+    height: 100%;
     color: #fff;
   }
   .customCard {
@@ -206,11 +184,21 @@
   }
   .customCard .trans {
     height: 100%;
-    border-radius: 5px;
+    border-radius: 20px;
     /*background-image: linear-gradient(rgba(255,255,255,0.0), rgba(0,0,0,0.3), rgba(0,0,0,1))!important;*/
     background-image: linear-gradient(rgb(82,154,217,0.0), rgb(82,154,217,0.3), rgb(82,154,217,1));
     color: white;
     cursor: pointer;
+  }
+  .textoTitulo {
+    position: relative;
+    font-size: 18px;
+    top: 70%;
+  }
+  .textoDescripcion {
+    position: relative;
+    font-size: 14px;
+    top: 65%;
   }
   .textoPresentacion {
     position: relative;
@@ -220,5 +208,15 @@
   .customCard:nth-child(1) {
     background-size: cover;
     background-position: center;
+  }
+  .btn-chaknuul {
+    display: flex;
+    justify-content: center;  /* Centra el texto horizontalmente */
+    align-items: center;  
+    margin-top: 5px;
+    border-radius: 20px;
+    height: 5vh;
+    background-image: linear-gradient(rgb(82,154,217,0.6), rgb(82,154,217,0.8), rgb(82,154,217,1));
+    color: white;
   }
 }

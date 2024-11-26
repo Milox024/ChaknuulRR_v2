@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("load", () => {
   setTimeout(() => {
       hideLoader();
-    }, 2000);
+    }, 100);
 })
 
 
