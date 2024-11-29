@@ -21,9 +21,12 @@ const HomeContainer = () => {
 
   return (
     <div className="snap-container">
-      <img src="images/chaknuul-logo.svg" alt="" style={{ width: 120}} />
-      <p className="chaknuul-main">Chaknúul</p>
-      <h5 className="lema-main">Ser tú es suficiente.</h5>
+      <div className="flex-left">
+        <img src="images/chaknuul-logo.svg" alt="" className="logoPresentacion" />
+        <p className="chaknuul-main">Chaknúul</p>
+        <h5 className="lema-main">Ser tú es suficiente.</h5>
+        <p className="lema-main onlyPc">Grupo Nudista para Hombres en Ciudad de México, donde fomentamos la aceptación del cuerpo de manera natural a través de actividades físicas, recreativas, viajes y esparcimiento.</p>
+      </div>
       <GridContainer ></GridContainer>
     </div>
   );

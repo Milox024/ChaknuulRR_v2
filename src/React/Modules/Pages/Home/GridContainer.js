@@ -1,4 +1,5 @@
 import { Fragment, useEffect } from "react"
+import { redirect } from "react-router-dom"
 
 
 
@@ -78,16 +79,17 @@ const GridContainer = () => {
     },[])
 
     return (
-        <div>
+        <div className="eventosPresentacion">
             <hr></hr>
             <h6>Disfruta con nosotros nuestras actividades y colaboraciones</h6>
             <div className="mainEvent">
                 <div className="grid-element">
-                    <a href={eventoPrincipal.tag}>
+                    <a href="/principal">
                         <div className="customCard" style={{ backgroundImage: `url('./images/principal/zipolite.png')` }}>
                             <div className="trans">
-                                <p className="textoTitulo">Zipolite</p>
-                                <p className="textoDescripcion">Encuentro Nudista 2025</p>
+                                <span className="textoTitulo">Zipolite</span>
+                                <br></br>
+                                <span className="textoDescripcion">Encuentro Nudista 2025</span>
                             </div>
                         </div>
                     </a>
@@ -100,7 +102,7 @@ const GridContainer = () => {
                             <a href={activity.tag}>
                                 <div className="customCard" style={{ backgroundImage: `url('./images/activities/${activity.img}')` }}>
                                     <div className="trans">
-                                        <p className="textoPresentacion">{activity.actividad}</p>
+                                        <span className="textoPresentacion">{activity.actividad}</span>
                                     </div>
                                 </div>
                             </a>

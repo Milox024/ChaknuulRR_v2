@@ -1,17 +1,24 @@
 import { Fragment } from "react"
 
 
-const HeaderContainer = () => {
+const HeaderContainer = (props) => {
     return (
-    <header>
-        <center>
-        <a href="#zona1" className="logo">
-        <img src="images/chaknuul-logo.svg" alt="" className="img"/>
-        <br/>
-        Chaknúul
-        </a>
-        </center>
-    </header>
+    <div>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-2">
+            <a className="navbar-brand chaknuul-navbar" href="/">
+                <img src="/images/chaknuul-logo.svg" width="40" height="40" className="d-inline-block align-center" alt="" />
+                &nbsp;Inicio
+            </a>
+            {
+                /*
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+                */
+            }
+        </nav>
+        {props.children}
+    </div>
     )
 }
 
