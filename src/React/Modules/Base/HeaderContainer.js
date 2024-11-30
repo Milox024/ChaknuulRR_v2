@@ -1,5 +1,170 @@
-import { Fragment } from "react"
+import React, { Fragment } from "react"
 
+
+const eventList = [
+    {
+        id: 1,
+        tipo: "viaje",
+        foco: false,
+        img:"posada",
+        lugar: "Morelos",
+        titulo: "Gran Posada Nudista",
+        descripcion: "DISFRUTA DEL NUDISMO, En un ambiente seguro, divertido de convivencia, disfruta de un fin de semana para que te relajes y disfrutes al máximo.",
+        objetivo: "",
+        incluye: "*Transporte Ida y vuelta*Estancia*Comida, cena, desayuno",
+        actividades: "*Transporte Ida y vuelta*Estancia*Comida, cena, desayuno",
+        itinerario: "*Salida viernes 20 Dic 6:00 pm DESDE METRO GENERAL ANAYA.*Regreso el Domingo 22 3:00 pm Saliendo de allá.",
+        objetivo: "",
+        comentarios: "Pregunta por las Opciones y facilidades de pagó:",
+        llamada: "",
+        fechaDescriptiva: "20, 21, 22 de Diciembre",
+        fecha: new Date(2024,12,20)
+    },
+    {
+        id: 2,
+        tipo: "clase",
+        foco: false,
+        img:"lingam",
+        lugar: "Zona Rosa",
+        titulo: "Taller de  Masaje Lingam",
+        descripcion: "Un Camino hacia el Placer y la Conexión ¿Estás listo para explorar nuevas fronteras de placer y sensualidad?, El Masaje Lingam es una experiencia única que te llevará a un mundo de relajación, intimidad y autoconciencia.",
+        objetivo: "",
+        incluye: "*Una experiencia de masaje sensual.*Relajación profunda y exploración de la sensualidad.*Conexión emocional con tu cuerpo.",
+        actividades: "",
+        itinerario: "*Salida viernes 20 Dic 6:00 pm DESDE METRO GENERAL ANAYA.*Regreso el Domingo 22 3:00 pm Saliendo de allá.",
+        objetivo: "",
+        comentarios: "",
+        llamada: "Descubre el Placer y la Conexión: Reconecta con tu cuerpo y experimenta una nueva dimensión de placer y sensualidad. ¡Reserva tu experiencia de Masaje Lingam hoy mismo!",
+        fechaDescriptiva: "20 de Diciembre",
+        fecha: new Date(2024,12,20)
+    },
+    {
+        id: 3,
+        tipo: "clase",
+        foco: false,
+        img:"erotica",
+        lugar: "Zona Rosa",
+        titulo: "Sesion Erotica",
+        descripcion: "¿Listo para una experiencia que te conecte con tu esencia y explore la sensualidad de una manera consciente? Una sesión erótica es tu puerta de entrada a un mundo de espiritualidad y conexión personal como nunca antes.",
+        objetivo: "Respiración consciente y meditación, Toques sensuales, Conexión emocional profunda, Ejercicios de confianza y respeto.",
+        incluye: "*Nuestra sesión erótica se adapta a tus necesidades y deseos. Ya sea que busques una mayor conexión en pareja (pareja de trabajo o sentimental) o una experiencia individual, estamos aquí para guiarte.*Entorno de Respeto y Consentimiento: Tu comodidad es nuestra prioridad. Todas las sesiones se llevan a cabo en un ambiente de respeto y comunicación abierta.",
+        actividades: "",
+        itinerario: "",
+        objetivo: "",
+        comentarios: "",
+        llamada: "La sesión erótica  es un viaje hacia la autoconciencia, la intimidad y la espiritualidad. ¡Reserva tu sesión erótica y comienza a explorar tu verdadera esencia hoy!",
+        fechaDescriptiva: "14 de Diciembre",
+        fecha: new Date(2024,12,14)
+    },
+    {
+        id: 4,
+        tipo: "clase",
+        foco: false,
+        img:"erotica",
+        lugar: "Zona Rosa",
+        titulo: "Sesion Erotica",
+        descripcion: "¿Listo para una experiencia que te conecte con tu esencia y explore la sensualidad de una manera consciente? Una sesión erótica es tu puerta de entrada a un mundo de espiritualidad y conexión personal como nunca antes.",
+        objetivo: "Respiración consciente y meditación, Toques sensuales, Conexión emocional profunda, Ejercicios de confianza y respeto.",
+        incluye: "*Nuestra sesión erótica se adapta a tus necesidades y deseos. Ya sea que busques una mayor conexión en pareja (pareja de trabajo o sentimental) o una experiencia individual, estamos aquí para guiarte.*Entorno de Respeto y Consentimiento: Tu comodidad es nuestra prioridad. Todas las sesiones se llevan a cabo en un ambiente de respeto y comunicación abierta.",
+        actividades: "",
+        itinerario: "",
+        objetivo: "",
+        comentarios: "",
+        llamada: "La sesión erótica  es un viaje hacia la autoconciencia, la intimidad y la espiritualidad. ¡Reserva tu sesión erótica y comienza a explorar tu verdadera esencia hoy!",
+        fechaDescriptiva: "28 de Diciembre",
+        fecha: new Date(2024,12,28)
+    },
+    {
+        id: 5,
+        tipo: "clase",
+        foco: false,
+        img:"yoga",
+        lugar: "Zona Rosa",
+        titulo: "Yoga Nudista - Principiantes e intermedios",
+        descripcion: "¿Imaginas deshacerte del estrés diario, conectarte con tu esencia y encontrar la paz interior que tanto necesitas? ¡Te invitamos a formar parte de nuestro exclusivo grupo de yoga nudista y sentir la relajación total al desnudo!",
+        objetivo: "Descubre las técnicas de respiración que te liberarán de la ansiedad y el estrés, guiadas por un experto que te acompañará en este viaje hacia la serenidad.",
+        incluye: "Sumérgete en una fusión de posturas físicas, ejercicios de respiración y meditación que no solo mejorarán tu bienestar general, sino que te ayudarán a encontrar un equilibrio único entre cuerpo y mente.",
+        actividades: "",
+        itinerario: "",
+        objetivo: "",
+        comentarios: "",
+        llamada: "Reserve ya esta clase Para principiantes e intermedios.",
+        fechaDescriptiva: "6 de Diciembre",
+        fecha: new Date(2024,12,6)
+    },
+    {
+        id: 6,
+        tipo: "clase",
+        foco: false,
+        img:"dibujo",
+        lugar: "Zona Rosa",
+        titulo: "Taller de Dibujo al desnudo",
+        descripcion: "Taller de Dibujo al Desnudo, una experiencia única donde el instructor, el modelo y los aprendices se encuentran en un ambiente de creatividad y aprendizaje absoluto al desnudo.",
+        objetivo: "*Asesoríaprofesional: Recibe orientación y consejos de un profesional experimentado. Convivencia durante la sesión. Sal con tu dibujo en mano desde las primer sesión.",
+        incluye: "Herramientas basicas*Cafecito*Aperitivos*Ambiente ameno para disfrutar mientras dibujas",
+        actividades: "",
+        itinerario: "",
+        objetivo: "",
+        comentarios: "",
+        llamada: "¡No dejes pasar esta oportunidad de explorar tu creatividad y mejorar tus habilidades artísticas!",
+        fechaDescriptiva: "29 de Diciembre",
+        fecha: new Date(2024,12,29)
+    },
+    {
+        id: 7,
+        tipo: "clase",
+        foco: false,
+        img:"nudismo",
+        lugar: "Zona Rosa",
+        titulo: "Taller de Induccion al nudismo",
+        descripcion: "¿Te has preguntado cómo sería liberarte de prejuicios, inseguridades y miedos? Nuestro Taller de Inducción al Nudismo te ofrece la oportunidad perfecta para conectar con tu cuerpo de una manera auténtica y natural.",
+        objetivo: "Este taller está diseñado especialmente para quienes quieren dar el primer paso en el nudismo y buscan hacerlo de manera gradual y guiada.",
+        incluye: "*Facilitador especializado que te guiará con profesionalismo y empatía. *Ejercicios progresivos para una introducción cómoda y respetuosa al nudismo. *Un entorno seguro y privado, libre de juicios, donde podrás expresarte con total confianza.*Técnicas de relajación que te ayudarán a soltar tensiones y a conectar con tu cuerpo.*Actividades grupales para explorar la convivencia desde la autenticidad",
+        actividades: "",
+        itinerario: "",
+        objetivo: "",
+        comentarios: "",
+        llamada: "¿Listo para dar el paso?  experimenta la verdadera conexión contigo mismo.",
+        fechaDescriptiva: "PROXIMAMENTE",
+        fecha: new Date(1900,1,1)
+    },
+    {
+        id: 8,
+        tipo: "clase",
+        foco: false,
+        img:"eneagrama",
+        lugar: "Zona Rosa",
+        titulo: "CONECTANDO CON MI ESCENCIA ",
+        descripcion: "Un sistema de crecimiento personal que te revelan la mejor combinación para construir o reforzar tu bienestar personal y éxito profesional.",
+        objetivo: "Te ayudaremos a encontrar tu propia fórmula de éxito y bienestar basada en tu realidad.",
+        incluye: "Sistema de nueve posibilidades de crecimiento, que te ayudaran a identificar con claridad tus puntos ciegos y tus fortalezas. ",
+        actividades: "",
+        itinerario: "",
+        objetivo: "",
+        comentarios: "",
+        llamada: "No es un taller mas, es el taller que necesitas tomar, Reserva Ya.",
+        fechaDescriptiva: "15 de Diciembre",
+        fecha: new Date(2024,12,15)
+    },
+    {
+        id: 9,
+        tipo: "clase",
+        foco: false,
+        img:"cumcontrol",
+        lugar: "Zona Rosa",
+        titulo: "Cum Control",
+        descripcion: "¿Quieres durar más pero terminas antes?, En nuestras sesiones de Cum Control, aprenderás técnicas efectivas, nuevos ejercicios y dinámicas diseñadas para ayudarte a alcanzar tu objetivo.",
+        objetivo: "n estas sesiones, trabajarás tanto en pareja como en grupo con otros participantes. El objetivo es que experimentes nuevas formas de darte amor y descubras un control sexual pleno.🍆💦",
+        incluye: "*100 minutos de interacción y dinámicas.*Lubricante individual (Aceite de coco)*Toallitas  húmedas y papel higiénico.",
+        actividades: "",
+        itinerario: "",
+        objetivo: "",
+        comentarios: "",
+        llamada: "",
+        fechaDescriptiva: "28 de Diciembre",
+        fecha: new Date(2024,12,28)
+    }
+  ]
 
 const HeaderContainer = (props) => {
     return (
@@ -17,7 +182,8 @@ const HeaderContainer = (props) => {
                 */
             }
         </nav>
-        {props.children}
+
+        {React.cloneElement(props.children, { eventList })}
     </div>
     )
 }

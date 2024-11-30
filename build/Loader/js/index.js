@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("load", () => {
   setTimeout(() => {
       hideLoader();
-    }, 100);
+    }, 500);
 })
 
 
@@ -16,6 +16,8 @@ const showLoader = () => {
 const hideLoader = () => {
   loader.classList.remove("show_loader");
 }
+
+
 
 
 //window.addEventListener("scroll", function(){

@@ -2,8 +2,6 @@ import Box from '@mui/material/Box';
 import HeaderContainer from './HeaderContainer';
 
 const BaseContainer = (props) => {
-
-
   return (
     <Box sx={{ display: 'flex' }}>
       <Box component="main" sx={{ p: 3, marginTop: 10, marginLeft: 5, marginRight: 5 }}>

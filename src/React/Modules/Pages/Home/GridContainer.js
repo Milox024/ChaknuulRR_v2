@@ -18,19 +18,19 @@ const GridContainer = () => {
             id: 2,
             actividad: "Especiales",
             img:"especiales.png",
-            tag: "#especiales"
+            tag: "/especiales"
         },
         {
             id: 3,
             actividad: "Viajes",
             img:"viajes.png",
-            tag: "#viajes"
+            tag: "/viajes"
         },
         {
             id: 4,
             actividad: "Frecuentes",
             img:"frecuentes.png",
-            tag: "#frecuentes"
+            tag: "/frecuentes"
         },
         /*
         {
