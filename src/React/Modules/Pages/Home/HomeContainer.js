@@ -27,7 +27,7 @@ const HomeContainer = () => {
         <h5 className="lema-main">Ser tú es suficiente.</h5>
         <p className="lema-main onlyPc">Grupo Nudista para Hombres en Ciudad de México, donde fomentamos la aceptación del cuerpo de manera natural a través de actividades físicas, recreativas, viajes y esparcimiento.</p>
       </div>
-      <GridContainer ></GridContainer>
+      <GridContainer key={0} ></GridContainer>
     </div>
   );
 };

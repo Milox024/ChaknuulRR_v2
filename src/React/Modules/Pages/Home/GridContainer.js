@@ -98,7 +98,7 @@ const GridContainer = () => {
             <div className="grid-container grid-container--fill">
                 {
                     listaActividades && listaActividades.map((activity, index) => 
-                        <div className="grid-element">
+                        <div key={index} className="grid-element">
                             <a href={activity.tag}>
                                 <div className="customCard" style={{ backgroundImage: `url('./images/activities/${activity.img}')` }}>
                                     <div className="trans">

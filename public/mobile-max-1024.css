@@ -55,6 +55,18 @@
       font-size: 26px;
       color: white;
   }
+  .chaknuul-sm
+  {
+      font-family: 'Sirin Stencil', sans-serif;
+      font-size: 20px;
+      color: white;
+  }
+  .chaknuul-smm
+  {
+      font-family: 'Sirin Stencil', sans-serif;
+      font-size: 18px;
+      color: white;
+  }
   .poppins 
   {
       font-family: 'Poppins', sans-serif;
@@ -227,6 +239,12 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .bg-especiales {
+    background: url("./images/bg-especiales.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .contenidoPrincipal {
     border-radius: 20px;
     height: 80%;
@@ -307,8 +325,21 @@
   }
   
   .panel {
-    padding: 15px;
+    padding: 5px;
     display: none;
+  }
+  .whatsapp-evento {
+    width: 100%;
+    height:25px;
+    float: right;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    margin: 8px;
+    padding: 1px;
+    font-size:16px;
+    z-index:100;
   }
 
 
