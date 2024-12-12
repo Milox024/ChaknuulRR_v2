@@ -74,9 +74,6 @@ const GridContainer = () => {
     //-Partners
     //-Chaknuul Shop
 
-    useEffect(() => {
-        console.log("listaActividades", listaActividades)
-    },[])
 
     return (
         <div className="eventosPresentacion">
@@ -110,9 +107,11 @@ const GridContainer = () => {
                     )
                 }
             </div>
+            {/*
             <div className="btn-chaknuul" >
                 Conoce más aqui
             </div>
+            */}
         </div>
     )
 }
