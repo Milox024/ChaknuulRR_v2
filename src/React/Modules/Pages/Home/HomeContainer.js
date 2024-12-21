@@ -1,23 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Fragment } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  requestHomeModuleInfo,
-} from "../../../ReduxSaga/Actions/Home";
 import GridContainer from "./GridContainer";
 
 const HomeContainer = () => {
-  
-  const dispatch = useDispatch();
-
-  const appReducers = {};
-  appReducers.user = useSelector((state) => state.user);
-  appReducers.home = useSelector((state) => state.home);
-
-  useEffect(() => {
-    dispatch(requestHomeModuleInfo());
-  },[])
-
   return (
     <div>
       <div className="onlyPc snap-container">

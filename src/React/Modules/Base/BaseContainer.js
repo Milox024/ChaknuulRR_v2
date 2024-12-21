@@ -1,9 +1,21 @@
 import Box from '@mui/material/Box';
 import HeaderContainer from './HeaderContainer';
 import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { requestHomeModuleInfo } from './../../ReduxSaga/Actions/Home'
 
 const BaseContainer = (props) => {
 
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+      dispatch(requestHomeModuleInfo());
+    },[])
+
+    
+    const appReducers = {};
+    appReducers.user = useSelector((state) => state.user);
+    appReducers.home = useSelector((state) => state.home);
   
     const eventList = [
       {
@@ -109,7 +121,7 @@ const BaseContainer = (props) => {
           fecha: new Date(2024,11,28)
       },
       {
-          id: 6,
+          id: 10,
           tipo: "clase",
           foco: false,
           img:"dibujo",
@@ -126,7 +138,7 @@ const BaseContainer = (props) => {
           fecha: new Date(2024,11,29)
       },
       {
-          id: 10,
+          id: 11,
           tipo: "especial",
           foco: false,
           img:"convivenciaNav",
@@ -143,7 +155,24 @@ const BaseContainer = (props) => {
           fecha: new Date(2024,11,28)
       },
       {
-          id: 7,
+          id: 12,
+          tipo: "especial",
+          foco: false,
+          img:"juegos",
+          lugar: "Santa María la Rivera, Cerca del metro revolución o metrobus el Chopo.",
+          titulo: "Tarde de Juegos",
+          informacion: "¡Cierra el año con nuestro divertido evento nudista o en calzones!, Este domingo 29 de diciembre, te invitamos a vivir una experiencia única llena de juegos, dinámicas de grupo, botanas  y un ambiente inigualable.",
+          objetivo: "",
+          incluye: "",
+          actividades: "",
+          itinerario: "",
+          comentarios: "Costo de acceso: Costo General $200, Si asististe a nuestra Convivencia Navideña solo pagas $150, Si reservaste TALLER DE DIBUJO. $100",
+          llamada: "No te pierdas esta tarde inolvidable con Chaknuul, ¡Diversión, confianza y comunidad te esperan!",
+          fechaDescriptiva: "29 de Diciembre",
+          fecha: new Date(2024,11,29)
+      },
+      {
+          id: 13,
           tipo: "clase",
           foco: false,
           img:"nudismo",

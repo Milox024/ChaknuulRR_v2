@@ -4,7 +4,7 @@ class HomeModule {
       {
         code: 100
       };
-      await fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+      await fetch("http://chaknuul-001-site1.anytempurl.com/api/v1/public/PublicEvents")
         .then((response) => response.json())  
           .then((pok) => {
             response.pokemon = pok;
