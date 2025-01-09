@@ -31,38 +31,7 @@ const GridContainer = () => {
             actividad: "Frecuentes",
             img:"frecuentes.png",
             tag: "/frecuentes"
-        },
-        /*
-        {
-            id: 5,
-            actividad: "Proyectos",
-            img:"proyectos.png",
-            tag: "#proyectos"
-        },
-        {
-            id: 6,
-            actividad: "Comunidad",
-            img:"comunidad.png",
-            tag: "#comunidad"
-        },
-        {
-            id: 7,
-            actividad: "Partners",
-            img:"partners.png",
-            tag: "#partners"
-        },
-        {
-            id: 8,
-            actividad: "Shop",
-            img:"shop.png",
-            tag: "#shop"
-        },
-        {
-            id: 8,
-            actividad: "Mas",
-            img:"mas.png",
-            tag: "#mas"
-        }*/
+        }
     ]
 
     //-Eventos especiales 

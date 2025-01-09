@@ -8,8 +8,6 @@ export default function home(state = {}, action) {
         case RESPONSE_HOME_MODULE_INFO:
             {
                 const responseHomeModule = action.payload.response;
-                console.log("Reducers Home")
-                console.log(responseHomeModule);
                 if (responseHomeModule.code === 100) {
                     const homeModuleEs = responseHomeModule
                     return { ...state, errorLoadHomeModule: false, homeModuleEs }

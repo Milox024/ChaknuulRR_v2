@@ -6,8 +6,8 @@ class HomeModule {
       };
       await fetch("http://chaknuul-001-site1.anytempurl.com/api/v1/public/PublicEvents")
         .then((response) => response.json())  
-          .then((pok) => {
-            response.pokemon = pok;
+          .then((e) => {
+            response.eventos = e;
           }
         );
       return response;
