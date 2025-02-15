@@ -30,9 +30,9 @@ const HomeContainer = () => {
         </div>
         <hr></hr>
         <div className="eventosPc">
-          <div className="uno" style={{ backgroundImage: `url("/images/principal/zipolite-banner-pc.png")` }}>
+          <div className="uno" style={{ backgroundImage: `url("/images/principal/finde.png")` }}>
             <div className="cardMain">
-                <a href="https://wa.me/5611035720?text=Hola, Me interesa 'Zipolite 2025', Me puedes dar más información" className="whatsapp" target="_blank">
+                <a href="https://wa.me/5611035720?text=Hola, Me interesa 'Fin de semana Atrevido', Me puedes dar más información" className="whatsapp" target="_blank">
                   <i className="fa fa-whatsapp whatsapp-icon fa-1x">&nbsp; Mas información</i>
                 </a>
             </div>

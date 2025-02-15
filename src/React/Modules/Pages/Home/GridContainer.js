@@ -28,7 +28,7 @@ const GridContainer = () => {
         },
         {
             id: 4,
-            actividad: "Clases",
+            actividad: "Talleres",
             img:"frecuentes.png",
             tag: "/frecuentes"
         }
@@ -51,7 +51,7 @@ const GridContainer = () => {
             <div className="mainEvent">
                 <div className="grid-element">
                     <a href="https://wa.me/5611035720?text=Hola, Me interesa el Viaje a Morelos" className="" target="_blank">
-                        <div className="customCard" style={{ backgroundImage: `url('eventimages/95a89565-4.png')` }}>
+                        <div className="customCard" style={{ backgroundImage: `url("/images/principal/finde.png")` }}>
                             <div className="trans-main">
                             </div>
                         </div>

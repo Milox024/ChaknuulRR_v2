@@ -157,7 +157,7 @@
     height: 100%;
     width: 100%;
     border-radius: 20px;
-    background-image: linear-gradient(rgb(82,154,217,0.0), rgb(82,154,217,0.3), rgb(82,154,217,.5));
+    background-image: linear-gradient(rgb(82,154,217,0.0), rgb(82,154,217,0), rgb(82,154,217,0));
     color: white;
     cursor: pointer;
   }

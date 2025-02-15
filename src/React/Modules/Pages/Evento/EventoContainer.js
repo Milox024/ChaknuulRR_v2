@@ -47,10 +47,13 @@ const EventoContainer = ({event}) => {
     }, [event])
 
     
-    const getFechaFormateada = (fecha) => {
+    const getFechaFormateada = (fecha, lugar) => {
         var date = new Date(fecha);
+        if(date.getFullYear > 2100)
+            return "Proximamente"
         const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre"];
-        return ("0" + date.getDate()).slice(-2) + " " + meses[date.getMonth()].slice(0,3) + " " + date.getFullYear();
+        let texto = ("0" + date.getDate()).slice(-2) + " " + meses[date.getMonth()].slice(0,3) + " " + date.getFullYear() + " - " + lugar;
+        return texto;
     }   
 
     return (
@@ -60,7 +63,7 @@ const EventoContainer = ({event}) => {
             <div className="divEventoDesc">
                 <h5 className="chaknuul-sm">{event.titulo}</h5>
                 <p style={{ fontSize: 10 }}>
-                {getFechaFormateada(event.fecha)} - {event.lugar}
+                {getFechaFormateada(event.fecha, event.lugar)}
                 </p>
                 <a id="lectura" style={{ textDecoration: "pointer" }} onClick={(e) => { handleclickMoreInfo(event.id) }}>Ver mas</a>
                 <div className="panel" id={`divinfo${event.id}`} style={{ textAlign: "justify", fontSize: fontSize }}>
