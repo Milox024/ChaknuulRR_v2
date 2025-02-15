@@ -25,10 +25,10 @@ const ViajesContainer = () => {
             <p style={{ fontSize: 35 }} className="chaknuul">Viajes</p>
             <p style={{ fontSize: 16, color: "white", textAlign: "justify" }}>¿Estás listo para una experiencia única llena de aventura, interacción y nuevas amistades?, Unete a nuestras escapadas de la ciudad</p>
             {
-                eventList && eventList.filter((e) => e.tipo == 1 && e.fecha > new Date()).map((event, key) => {return (<EventoContainer event={event} key={key}></EventoContainer>) })
+                eventList && eventList.filter((e) => e.tipo == 2).map((event, key) => {return (<EventoContainer event={event} key={key}></EventoContainer>) })
             }
             {
-                eventList.filter((e) => e.tipo == 1 && e.fecha > new Date()).length == 0 &&
+                eventList.filter((e) => e.tipo == 2).length == 0 &&
                 
                 <div className="eventosMovilCard" style={{ backgroundImage: `url("/images/viajes.png")` }}>
                         <div className="eventosMovilCart-whats">

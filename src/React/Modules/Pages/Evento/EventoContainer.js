@@ -46,14 +46,21 @@ const EventoContainer = ({event}) => {
         setFontSize(15-valores);
     }, [event])
 
+    
+    const getFechaFormateada = (fecha) => {
+        var date = new Date(fecha);
+        const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre"];
+        return ("0" + date.getDate()).slice(-2) + " " + meses[date.getMonth()].slice(0,3) + " " + date.getFullYear();
+    }   
+
     return (
         <div className="divEventoMarco">
             <div className="divEvento">
-            <div className="divEventoImg" style={{backgroundImage: `url('/eventos/${event.img}.png')` }}></div>
+            <div className="divEventoImg" style={{backgroundImage: `url('eventimages/${event.imagen}')` }}></div>
             <div className="divEventoDesc">
                 <h5 className="chaknuul-sm">{event.titulo}</h5>
                 <p style={{ fontSize: 10 }}>
-                    {event.lugar} - {event.fechaDescriptiva}
+                {getFechaFormateada(event.fecha)} - {event.lugar}
                 </p>
                 <a id="lectura" style={{ textDecoration: "pointer" }} onClick={(e) => { handleclickMoreInfo(event.id) }}>Ver mas</a>
                 <div className="panel" id={`divinfo${event.id}`} style={{ textAlign: "justify", fontSize: fontSize }}>

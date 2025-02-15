@@ -16,7 +16,7 @@ const GridContainer = () => {
     [
         {
             id: 2,
-            actividad: "Especiales",
+            actividad: "Eventos",
             img:"especiales.png",
             tag: "/especiales"
         },
@@ -28,7 +28,7 @@ const GridContainer = () => {
         },
         {
             id: 4,
-            actividad: "Frecuentes",
+            actividad: "Clases",
             img:"frecuentes.png",
             tag: "/frecuentes"
         }
@@ -50,12 +50,9 @@ const GridContainer = () => {
             <h6>Disfruta con nosotros nuestras actividades y colaboraciones</h6>
             <div className="mainEvent">
                 <div className="grid-element">
-                    <a href="/principal">
-                        <div className="customCard" style={{ backgroundImage: `url('./images/principal/zipolite.png')` }}>
-                            <div className="trans">
-                                <span className="textoTitulo">Zipolite</span>
-                                <br></br>
-                                <span className="textoDescripcion">Encuentro Nudista 2025</span>
+                    <a href="https://wa.me/5611035720?text=Hola, Me interesa el Viaje a Morelos" className="" target="_blank">
+                        <div className="customCard" style={{ backgroundImage: `url('eventimages/95a89565-4.png')` }}>
+                            <div className="trans-main">
                             </div>
                         </div>
                     </a>

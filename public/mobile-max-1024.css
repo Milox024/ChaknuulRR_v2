@@ -153,6 +153,14 @@
     border-radius: 20px;
     display: flex;
   }
+  .customCard .trans-main {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(rgb(82,154,217,0.0), rgb(82,154,217,0.3), rgb(82,154,217,.5));
+    color: white;
+    cursor: pointer;
+  }
   .customCard .trans {
     height: 100%;
     width: 100%;
@@ -175,6 +183,7 @@
   .textoPresentacion {
     position: relative;
     top: 10vh;
+    font-family: 'Sirin Stencil', sans-serif;
   }
   .customCard:nth-child(1) {
     background-size: cover;

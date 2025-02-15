@@ -26,10 +26,10 @@ const FrecuentesContainer = () => {
             <p style={{ fontSize: 35 }} className="chaknuul">Eventos Frecuentes</p>
             <p style={{ fontSize: 16, color: "white", textAlign: "justify" }}>Forma parte de nuestras clases y actividades dinámicas, Eventos diseñados para ofrecerte un espacio de aprendizaje, interacción y crecimiento personal.</p>
             {
-                eventList && eventList.filter((e) => e.tipo == 2 && e.fecha > new Date()).map((event, key) => {return (<EventoContainer event={event} key={key}></EventoContainer>) })
+                eventList && eventList.filter((e) => e.tipo == 3).map((event, key) => {return (<EventoContainer event={event} key={key}></EventoContainer>) })
             }
             {
-                eventList.filter((e) => e.tipo == 2 && e.fecha > new Date()).length == 0 &&
+                eventList.filter((e) => e.tipo == 3).length == 0 &&
                 
                 <div className="eventosMovilCard" style={{ backgroundImage: `url("/images/frecuentes.png")` }}>
                         <div className="eventosMovilCart-whats">

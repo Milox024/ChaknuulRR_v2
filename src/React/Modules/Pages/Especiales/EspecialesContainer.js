@@ -28,10 +28,10 @@ const EspecialesContainer = () => {
             <p style={{ fontSize: 35 }} className="chaknuul">Eventos especiales</p>
             <p style={{ fontSize: 15, color: "white", textAlign: "justify" }}>Cuando la ocasión lo amerita, celebramos las fechas importantes del año, únete a la comunidad chaknúul y comparte los eventos importantes del año</p>
             {
-                eventList && eventList.filter((e) => e.tipo == 3 && e.fecha > new Date()).map((event, key) => {return (<EventoContainer event={event} key={key}></EventoContainer>) })
+                eventList && eventList.filter((e) => e.tipo == 1).map((event, key) => {return (<EventoContainer event={event} key={key}></EventoContainer>) })
             }
             {
-                eventList.filter((e) => e.tipo == 3 && e.fecha > new Date()).length == 0 &&
+                eventList.filter((e) => e.tipo == 1).length == 0 &&
                 
                 <div className="eventosMovilCard" style={{ backgroundImage: `url("/images/fiestas.png")` }}>
                         <div className="eventosMovilCart-whats">

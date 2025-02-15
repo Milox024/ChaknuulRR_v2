@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import BaseContainer from "./React/Modules/Base/BaseContainer";
 import HomeContainer from "./React/Modules/Pages/Home/HomeContainer";
 import HeaderContainer from "./React/Modules/Base/HeaderContainer";
@@ -59,6 +59,7 @@ export default function routerApp() {
                     </BaseContainer>
                     } 
                 />
+                <Route path="/public/publicEvents" element={<Navigate to="/" replace />} />
             </Routes>
         </BrowserRouter>
     )
